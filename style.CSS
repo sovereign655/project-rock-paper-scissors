@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Taviraj', serif;
+    /* background-color: #1f2c39ff;
+    color: #00cc66ff; */
+    background-color: #1f2c39;
+    color: #F7FFF7;
+
+
+}
+
+.rock {
+    background:    #bdc3c700;
+    /* #bdc3c7 */
+    border-radius: 11px;
+    border:        3px solid #000000;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #F7FFF7;
+    display:       inline-block;
+    font:          italic bold 36px/1 "Ubuntu", sans-serif;
+    text-align:    center;
+}
+
+.paper {
+    
+
+    background:    #0099ff00;
+    /* #0099ff */
+    border-radius: 11px;
+    border:        3px solid #000000;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #F7FFF7;
+    display:       inline-block;
+    font:          italic bold 36px/1 "Ubuntu", sans-serif;
+    text-align:    center;
+}
+
+
+.scissors {
+
+    background:    #9c59b600;
+    /* #9b59b6 */
+    border:        3px solid #000000;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #F7FFF7;
+    display:       inline-block;
+    font:          italic bold 36px/1 "Ubuntu", sans-serif;
+    text-align:    center;
+}
+
+.header-bar {
+    background-color: #1f2c39;
+    color: #00cc66;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: flex-start;
+    font-family: 'Hind Siliguri', sans-serif;
+    
+      
+}
+
+.header-bar-title {
+    display: flex;
+    align-content: flex-start;
+    flex-shrink: 2;
+    font-size: 5dvw;
+
+}
+
+.game-container {
+    display: flex;
+}
+
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 2rem;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 2rem;
+
+}
+
+.game-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+.game-rounds {
+    padding: 1em;
+    
+}
+
+.game-score{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.player-score {
+    display: flex;
+    flex-direction: column;
+}
+
+.AI-score {
+    display: flex;
+    flex-direction: column;
+}
+.game-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: .5em;
+}
+
+.player-section, .AI-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+
+    margin: .5em;
+    
+}
+
+.player-buttons, .AI-button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 3em;
+}
+
+.game-log {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    color: #6CA6C1;
+
+}
+
+.footer-text{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    font-size: 1.2em;
+}
+/* CSS HEX */
+/* --gunmetal: #1f2c39ff;
+--emerald: #00cc66ff;
+--mint-cream: #f7fff7ff;
+--naples-yellow: #ffe66dff;
+--air-superiority-blue: #6ca6c1ff; */

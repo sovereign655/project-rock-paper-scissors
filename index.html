@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat&family=Taviraj&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.CSS" />
+
+    <title>Rock Paper Scissors</title>
 </head>
+
 <body>
+    <div class="header-bar">
+        <div class="header-bar-title">
+            <h2>Rock Paper Scissors</h2>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="game">
+            <div class="game-title">
+                <h2>It's you vs the AI, who will win?</h2>
+                <p>The first to 5 rounds is crowned the winner!</p>
+            </div>
+            <div class="game-rounds">
+                <h3>round "current round"/game over &#129318</h3>
+                <div class="game-score">
+                    <div class="player-score">Player: "o"</div>
+                    <div class="AI-score">Computer: "o"</div>
+                </div>
+            </div>
+            <div class="game-button-container">
+                <div class="player-section">
+                    <h4>pick one:</h4>
+                    <div class="player-buttons">
+                        <button class="rock">&#9994;</button>
+                        <button class="paper">&#9995;</button>
+                        <button class="scissors"> &#9996;</button>
+                    </div>
+                </div>
+                <div class="AI-section-container">
+                    <h4>What will the AI pick / the AI threw "R/P/C"</h4>
+                    <div class="AI-button">
+                        <button class="rock"> &#9994;</button>
+                        <button class="paper">&#9995;</button>
+                        <button class="scissors">&#9996;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-log">
+                <p>who will win round one?</p>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright of Sovereign, "TOP icon" "get year"</p>
+        </div>
+        
+    </footer>
+
+
+
+
+    <!-- scripts -->
     <script src="./RPS.js"></script>
-    
+
 </body>
+
 </html>
