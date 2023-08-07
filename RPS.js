@@ -1,4 +1,4 @@
-let player, CC;
+let count = 0;
 
 
 const playerSelection = () => {
@@ -51,4 +51,7 @@ const play_RPS = () => {
 
 }
 
-play_RPS();
+while (count < 5) {
+    play_RPS();
+    count += 1;
+}
