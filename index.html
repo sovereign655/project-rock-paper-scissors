@@ -24,42 +24,42 @@
         <div class="game">
             <div class="game-title">
                 <h2>It's you vs the AI, who will win?</h2>
-                <p>The first to 5 rounds is crowned the winner!</p>
+                <p>The first to 5 wins  is crowned the winner!</p>
             </div>
-            <div class="game-rounds">
-                <h3>round "current round"/game over &#129318</h3>
+            <div class="game-rounds" >
+                <h3 id="roundsInfo">round 0</h3>
                 <div class="game-score">
-                    <div class="player-score">Player: "o"</div>
-                    <div class="AI-score">Computer: "o"</div>
+                    <div class="player-score" id="playerScore">Player: 0</div>
+                    <div class="AI-score" id="computerScore">Computer: 0</div>
                 </div>
             </div>
             <div class="game-button-container">
                 <div class="player-section">
                     <h4>pick one:</h4>
                     <div class="player-buttons">
-                        <button class="rock">&#9994;</button>
-                        <button class="paper">&#9995;</button>
-                        <button class="scissors"> &#9996;</button>
+                        <button class="rock" id="playerRock">&#9994;</button>
+                        <button class="paper" id="playerPaper">&#9995;</button>
+                        <button class="scissors" id="playersScissors">&#9996;</button>
                     </div>
                 </div>
                 <div class="AI-section-container">
-                    <h4>What will the AI pick / the AI threw "R/P/C"</h4>
+                    <h4 id="computerChoice">What will the AI pick?</h4>
                     <div class="AI-button">
-                        <button class="rock"> &#9994;</button>
-                        <button class="paper">&#9995;</button>
-                        <button class="scissors">&#9996;</button>
+                        <button class="rock" id="CCrock"> &#9994;</button>
+                        <button class="paper" id="CCpaper">&#9995;</button>
+                        <button class="scissors" id="CCscissors">&#9996;</button>
                     </div>
                 </div>
             </div>
             <div class="game-log">
-                <p>who will win round one?</p>
+                <p id="gameResult">who will win round one?</p>
             </div>
         </div>
 
     </div>
     <footer class="footer">
         <div class="footer-text">
-            <p>copyright of Sovereign, "TOP icon" "get year"</p>
+            <p>Copyright © of <script>document.write(new Date().getFullYear())</script> Sovereign</p>
         </div>
         
     </footer>
@@ -73,3 +73,5 @@
 </body>
 
 </html>
+
+<!-- game over &#129318 -->

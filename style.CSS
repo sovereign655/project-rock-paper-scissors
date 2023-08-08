@@ -111,7 +111,14 @@ body {
 }
 
 .game-rounds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
     padding: 1em;
+    border-radius: 11px;
+    border:3px solid #00cc66;
     
 }
 
@@ -119,6 +126,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    
+    
 }
 
 .player-score {
@@ -164,13 +173,13 @@ body {
 }
 
 .footer {
+    background-color:#00cc66;
     position: absolute;
     width: 100%;
     bottom: 0;
     display: flex;
     justify-content: center;
     font-family: 'Taviraj', serif;
-    color: #6CA6C1;
 
 }
 
