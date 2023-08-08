@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat&family=Taviraj&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.CSS" />
+    <link rel="stylesheet" href="style.CSS">
 
     <title>Rock Paper Scissors</title>
 </head>
@@ -24,10 +24,10 @@
         <div class="game">
             <div class="game-title">
                 <h2>It's you vs the AI, who will win?</h2>
-                <p>The first to 5 wins  is crowned the winner!</p>
+                <p>The first to score 5 is crowned the winner!</p>
             </div>
             <div class="game-rounds" >
-                <h3 id="roundsInfo">round 0</h3>
+                <h3 id="roundsInfo">round 1</h3>
                 <div class="game-score">
                     <div class="player-score" id="playerScore">Player: 0</div>
                     <div class="AI-score" id="computerScore">Computer: 0</div>
@@ -37,23 +37,26 @@
                 <div class="player-section">
                     <h4>pick one:</h4>
                     <div class="player-buttons">
-                        <button class="rock" id="playerRock">&#9994;</button>
-                        <button class="paper" id="playerPaper">&#9995;</button>
-                        <button class="scissors" id="playersScissors">&#9996;</button>
+                        <button class="player-button rock" id="playerRock">&#9994;</button>
+                        <button class="player-button paper" id="playerPaper">&#9995;</button>
+                        <button class="player-button scissors" id="playersScissors">&#9996;</button>
                     </div>
                 </div>
                 <div class="AI-section-container">
                     <h4 id="computerChoice">What will the AI pick?</h4>
                     <div class="AI-button">
-                        <button class="rock" id="CCrock"> &#9994;</button>
-                        <button class="paper" id="CCpaper">&#9995;</button>
-                        <button class="scissors" id="CCscissors">&#9996;</button>
+                        <button class="AI-pick rock" id="CCrock"> &#9994;</button>
+                        <button class="AI-pick paper" id="CCpaper">&#9995;</button>
+                        <button class="AI-pick scissors" id="CCscissors">&#9996;</button>
                     </div>
                 </div>
             </div>
             <div class="game-log">
                 <p id="gameResult">who will win round one?</p>
             </div>
+        </div>
+        <div class="restart-container" id="restart">
+            <button class="restart-button" >Restart</button>
         </div>
 
     </div>
@@ -63,15 +66,8 @@
         </div>
         
     </footer>
-
-
-
-
-    <!-- scripts -->
     <script src="./RPS.js"></script>
 
 </body>
 
 </html>
-
-<!-- game over &#129318 -->
