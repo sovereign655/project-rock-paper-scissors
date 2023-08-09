@@ -1,4 +1,8 @@
-* {
+/* style.css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -11,12 +15,86 @@ body {
     color: #F7FFF7;
 }
 
-body:before {
-    content: "";
-    height: 100%;
-    float: left;
-    width: 0;
-    margin-top: -32767px;
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    flex-shrink: 0;
+    color: #00cc66;
+    padding: 10px 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.game-container>p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.game-goal {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.scoreboard {
+    text-align: center;
+    border-radius: 11px;
+    border: 3px solid #00cc66;
+    padding: 4px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.game-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Taviraj', serif;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 10px;
 }
 
 .player-button {
@@ -44,150 +122,86 @@ body:before {
     display: inline-block;
     font: bold 36px/1 'Hind Siliguri', sans-serif;
     text-align: center;
-}
 
-.header-bar {
-    background-color: #1f2c39;
-    color: #00cc66;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-content: flex-start;
-    font-family: 'Hind Siliguri', sans-serif;
-}
-
-.header-bar-title {
-    display: flex;
-    align-content: flex-start;
-    font-size: 4svw;
-}
-
-.game-container {
-    display: flex;
-    flex-shrink: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    gap: 2rem;
-}
-
-.game {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    gap: 2rem;
-}
-
-.game-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    gap: 1rem;
-}
-
-.game-rounds {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    padding: 1em;
-    border-radius: 11px;
-    border: 3px solid #00cc66;
-}
-
-.game-score {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.player-score {
-    display: flex;
-    flex-direction: column;
-}
-
-.AI-score {
-    display: flex;
-    flex-direction: column;
-}
-
-.game-button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: .5em;
-}
-
-.player-section,
-.AI-section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 1em;
-    margin: 0.5em;
-}
-
-.player-buttons,
-.AI-button {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    gap: .5rem;
-}
-
-.game-log {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-}
-
-.restart-container {
-    visibility: hidden;
-    display: flex;
-    flex: 1;
-    justify-content: center;
 }
 
 .restart-button {
+    visibility: hidden;
     background: #9c59b600;
     border: 3px solid #9b59b6;
     border-radius: 11px;
     padding: 20px 45px;
     color: #F7FFF7;
     display: inline-block;
-    font: bold 36px/1 'Hind Siliguri', sans-serif;
+    font: bold 36px/1 'Montserrat', sans-serif;
     text-align: right;
+    margin-top: 1em;
 }
 
 .restart-button:hover {
     background-color: #9b59b6;
 }
 
+
+
 .footer {
+    flex-shrink: 0;
     background-color: #00cc66;
-    clear: both;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    font-family: 'Taviraj', serif;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
-.footer-text {
-    display: flex;
-    padding: .5em;
-    justify-content: center;
-    font-size: 1rem;
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .game-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .game-goal {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .player-button {
+        background-color: #1f2c39;
+        border-radius: 11px;
+        border: 3px solid #000000;
+        border-radius: 11px;
+        padding: 15px 20px;
+        color: #F7FFF7;
+        display: inline-block;
+        font: bold 36px/1 'Hind Siliguri', sans-serif;
+        text-align: center;
+    }
+
+    .AI-pick {
+        background-color: #1f2c39;
+        border: 3px solid #00000000;
+        border-radius: 11px;
+        padding: 15px 20px;
+        color: #F7FFF7;
+        display: inline-block;
+        font: bold 36px/1 'Hind Siliguri', sans-serif;
+        text-align: center;
+    }
+
+    .restart-button {
+        background: #9c59b600;
+        border: 3px solid #9b59b6;
+        border-radius: 11px;
+        padding: 10px 25px;
+        color: #F7FFF7;
+        display: inline-block;
+        font: bold 16px/1 'Hind Siliguri', sans-serif;
+        text-align: right;
+    }
 }

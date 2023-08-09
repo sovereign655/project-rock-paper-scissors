@@ -15,7 +15,6 @@ const CCscissors = document.getElementById('CCscissors');
 const playerRock = document.getElementById('playerRock');
 const playerPaper = document.getElementById('playerPaper');
 const playersScissors = document.getElementById('playersScissors');
-const year = document.getElementById('year');
 const restart = document.getElementById('restart');
 
 restart.addEventListener("click", () => restartGame());
