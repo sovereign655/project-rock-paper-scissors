@@ -1,40 +1,30 @@
-# project-rock-paper-scissors
-TOP Foundations Course JS project 1
+# Rock Paper Scissors
 
+Welcome to the Rock Paper Scissors project, a part of The Odin Project's Foundations Course. This is one of my first JavaScript programs built from scratch. It's meant to demonstrate my ability to plan out a functioning application, using most, if not all, methods previously learned to create a rock-paper-scissors web app.
 
-This is one of my first JavaScript program built from scratch.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [About](#about)
+- [Learn More](#learn-more)
 
-It is meant to demonstrate my ability to plan out a functioning application, using most, if not all, methods previously learned.
-to find out more about The Odin Project, visit this website: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
+## Installation
 
-CC is short for "Computer controlled player"
-step 1
-how rock-paper-scissors is played:
+To play the Rock Paper Scissors game, follow these steps:
 
-    two players agree and begin to play,
+1. Fork this repository.
+2. Clone the forked repository to your local machine.
+3. Open the `index.html` file in your preferred web browser.
 
-    they decide if they are going to show 1 of three options:
-    rock
-    paper
-    scissors
+## Usage
 
-    from either perspective:
-    if rock is played:
+Once you've installed and opened the game, you can start playing by choosing either rock, paper, or scissors. The computer will also make a choice, and the winner will be determined according to the classic rules of the game.
+The first to reach a score of 5 is declared winner, restarting the game will restart the game rounds.
 
-        it will win scissors is played.
-        it will lose if paper is played.
-    
-    if paper is played:
+## About
 
-        it will win if rock is played.
-        it will lose if scissors is played.
-    
-    if scissors is played:
+This project is part of [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) curriculum. It's designed to help you practice your JavaScript skills and apply what you've learned about planning and building an interactive application.
 
-        it will win if paper is played.
-        it will lose if rock is played.
-    
-    if both players close the same option, it is a draw and a
-    reroll can be decided.
+## Learn More
 
-...
+To learn more about The Odin Project and their curriculum, visit their [website](https://www.theodinproject.com/).
