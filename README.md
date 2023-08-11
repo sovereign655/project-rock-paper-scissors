@@ -2,6 +2,10 @@
 
 Welcome to the Rock Paper Scissors project, a part of The Odin Project's Foundations Course. This is one of my first JavaScript programs built from scratch. It's meant to demonstrate my ability to plan out a functioning application, using most, if not all, methods previously learned to create a rock-paper-scissors web app.
 
+## App in Action
+
+![App Demo](https://gifyu.com/image/Sc5gd);
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
