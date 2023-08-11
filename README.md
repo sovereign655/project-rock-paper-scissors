@@ -4,7 +4,7 @@ Welcome to the Rock Paper Scissors project, a part of The Odin Project's Foundat
 
 ## App in Action
 
-![App Demo](https://gifyu.com/image/Sc5gd);
+![App Demo](https://s11.gifyu.com/images/Sc5gd.gif);
 
 ## Table of Contents
 - [Installation](#installation)
